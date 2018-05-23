@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {Route, Switch, NavLink, Redirect} from 'react-router-dom'
 import SearchForm from './SearchForm'
 
 class App extends Component {
