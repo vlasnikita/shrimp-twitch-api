@@ -9,7 +9,7 @@ var app = express();
 app.use(bodyParser.json());
 app.use('/api', api)
 
-app.listen(port, 'localhost', function (err) {
+app.listen(process.env.PORT || port, function (err) {
     if (err) {
         console.log(err);
         return;
