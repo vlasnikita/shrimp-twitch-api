@@ -1,6 +1,4 @@
 import React, { Component, Fragment } from 'react'
-import {connect} from 'react-redux'
-import {increment} from '../../AC'
 import TwitchUser from '../TwitchUser'
 
 class SearchForm extends Component {
@@ -43,10 +41,4 @@ class SearchForm extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
-    count: state.counter
-})
-
-export default connect(mapStateToProps, {
-    handleIncrement: increment
-})(SearchForm)
+export default SearchForm
